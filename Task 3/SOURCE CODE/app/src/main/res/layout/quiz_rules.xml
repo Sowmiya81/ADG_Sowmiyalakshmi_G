@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="BACK"
+        android:textSize="24sp"
+        app:backgroundTint="#55D394" />
+
+    <Button
+        android:id="@+id/button_begin_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_back"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="BEGIN QUIZ"
+        android:textSize="24sp"
+        app:backgroundTint="#55D394" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_begin_quiz"
+        android:layout_marginBottom="120dp"
+        android:background="@color/colorPrimary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="20sp"
+                    android:text="QUIZ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20sp"
+                    android:text="Quiz Rules"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:text="1)10 Questions with Timer"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:text="2)Changing of tabs is not allowed"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:text="3)Do not close the app once quiz has begun"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</RelativeLayout>
